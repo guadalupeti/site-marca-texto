@@ -315,7 +315,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px; /* Diminuiu o padding de 20px para 15px */
-    margin: 15px; /* Adicionou margem em todos os lados */
+    margin: 40px; /* Adicionou margem em todos os lados */
     flex: 0 0 calc(45% - 40px); /* Ajustou para compensar a margem */
     box-sizing: border-box;
     display: flex;
@@ -447,6 +447,7 @@ footer {
     height: 100px;
     object-fit: cover;
     margin-bottom: 15px;
+    margin: 0 auto 15px auto
 }
 
 .testimonial-card p {
@@ -693,4 +694,5 @@ footer {
     font-family: "Playwrite AR", cursive;
     font-optical-sizing: auto;
   }
+
 
