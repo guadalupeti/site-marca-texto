@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Neon&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -135,7 +141,13 @@
             <img src="ufjf.jpg" alt="Imagem da UFJF">
             <p>A Universidade Federal de Juiz de Fora (UFJF) é uma instituição de ensino superior pública federal brasileira. Sua sede situa-se em Juiz de Fora, no estado de Minas Gerais. A UFJF reúne na atualidade 16 unidades acadêmicas, agregando 36 cursos de graduação, 29 cursos de mestrados acadêmicos, três mestrados do tipo profissional e 17 cursos de doutorado, com quase 19 mil alunos matriculados. A qualidade da graduação da UFJF é reconhecida nacionalmente, tem sido atestada de forma indiscutível pelos processos de avaliação implementados pelo Ministério da Educação e Cultura nos últimos anos. O crescimento da graduação, tem sido um dos instrumentos pelos quais a UFJF tem procurado tornar-se mais inclusiva, tendo realizado duas formas de processo seletivo: atualmente o SISU e o PISM(Programa de Ingresso Seletivo Misto), que aumentam as chances do aluno de entrar na Universidade.</p>
         </div>
+        
     </section>
+    <div class = "matricula">
+        <p>
+        <a href="#" class="enrollment-btn">Faça já sua matrícula</a>
+        </p>
+    </div>
     <footer>
         <p>&copy; 2024 Marca Texto. Todos os direitos reservados.</p>
     </footer>
@@ -155,6 +167,30 @@
                 nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
             });
         });
+
+        function fadeInSection(newSectionId) {
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => {
+    if (section.id === newSectionId) {
+      section.classList.add('fade-enter');
+      section.classList.add('fade-enter-active');
+      section.style.display = 'block';
+      setTimeout(() => {
+        section.classList.remove('fade-enter');
+        section.classList.remove('fade-enter-active');
+      }, 500); // Tempo de duração da transição
+    } else {
+      section.classList.add('fade-exit');
+      section.classList.add('fade-exit-active');
+      setTimeout(() => {
+        section.classList.remove('fade-exit');
+        section.classList.remove('fade-exit-active');
+        section.style.display = 'none';
+      }, 500); // Tempo de duração da transição
+    }
+  });
+}
+
     </script>
 </body>
 </html>
