@@ -695,4 +695,48 @@ footer {
     font-optical-sizing: auto;
   }
 
+  .founder-section {
+    background-color: orange;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que a seção ocupe pelo menos a altura total da janela */
+    box-sizing: border-box;
+}
 
+.founder-content {
+    display: flex;
+    align-items: center;
+    max-width: 15000px;
+    width: 100%;
+}
+
+.founder-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.founder-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.founder-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.founder-image {
+    flex: 1;
+    text-align: right;
+}
+
+.founder-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
